@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tilting QReader</string>
+    <!--<string name="scan_barcode">Scan Barcode</string>-->
+    <string name="normal_QReader">Normal Scan</string>
+    <!--<string name="scan_from_fragment">Scan from fragment</string>-->
+    <!--<string name="front_camera">Front Camera</string>-->
+    <string name="tilting_QReader">Tilting Scan</string>
+    <string name="menu_instructions">Instructions</string>
+    <string name="description">It is a QRcode Reader which can interprets messages hierarchically by the angle of rotation between a camera and a QRcode.</string>
+    <string name="manual">Click Button "Tilting Scan" to activate the Tilting QRcode Reader.Rotate the if the origianl </string>
+    <string name="about">Author:Huang Haomi\nEmail:hhm8756@gmail.com\nIf you have any questions or find any bugs, feel free to email me.</string>
+    <!--<string name="toolbar_activity">Activity with Toolbar</string>-->
+
+</resources>
