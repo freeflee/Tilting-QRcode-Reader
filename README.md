@@ -23,6 +23,6 @@ To cooperate with Hierarchy Mode, The messages used to generating QR code should
 
 If you have any question or find any bug, please feel free to contact me. Thank you very much.
 
-Author:Huang Haomi
-Email:hhm8756@gmail.com
+Author: Huang Haomi
+Email: hhm8756@gmail.com
 
