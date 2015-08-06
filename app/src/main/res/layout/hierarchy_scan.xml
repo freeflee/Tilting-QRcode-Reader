@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <SurfaceView android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+
+    <com.journeyapps.barcodescanner.CompoundBarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+        <!--android:layout_above="@+id/buttonsLayout"-->
+        <!--android:layout_alignParentTop="true"/>-->
+
+
+
+    <LinearLayout
+        android:id="@+id/transparent_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:baselineAligned="false">
+        <!--android:visibility="gone"-->
+
+        <LinearLayout
+            android:id="@+id/runtimepreview_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:id="@+id/result_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/angle_preview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    style="@style/AngleStyle" />
+
+                <TextView
+                    android:id="@+id/result_preview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/white"
+                    android:textColorLink="@color/white"
+                    android:textSize="20sp"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="12dip"
+                    android:layout_gravity="center"
+                    android:autoLink="all"
+                    android:linksClickable="true"/>
+                    android:textIsSelectable="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:id="@+id/status_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/zxing_transparent"
+                    android:text="@string/zxing_msg_default_status"
+                    android:textColor="@color/zxing_status_text"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/middle_gap"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <!--android:layout_toLeftOf="@+id/centerHorizont">-->
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+
+
+                <Button
+                    android:id="@+id/start_or_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+                    <!--android:layout_marginTop="25dp"-->
+                    <!--android:layout_marginLeft="40dp"-->
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pausepreview_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:layout_marginBottom="130dp"
+
+
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/angleimage_pauselayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/angle_pausepreview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                style="@style/AngleStyle" />
+
+            <RelativeLayout
+                android:id="@+id/image_pauseLayout"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "1">
+
+                <ImageView
+                    android:id="@+id/image_pausepreview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/messageamount_pausepreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorLink="@color/white"
+            android:paddingLeft="16dip"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/result_pausepreview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="18sp"
+            android:paddingLeft="16dip"
+            android:paddingRight="12dip"
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:textIsSelectable="true"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</merge>

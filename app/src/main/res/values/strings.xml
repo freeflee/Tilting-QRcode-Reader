@@ -2,15 +2,15 @@
 <resources>
 
     <string name="app_name">Tilting QReader</string>
-    <!--<string name="scan_barcode">Scan Barcode</string>-->
-    <string name="normal_QReader">Normal Scan</string>
-    <!--<string name="scan_from_fragment">Scan from fragment</string>-->
-    <!--<string name="front_camera">Front Camera</string>-->
-    <string name="tilting_QReader">Tilting Scan</string>
+    <string name="normal_mode">Normal Mode</string>
+    <string name="hierarchy_mode">Hierarchy Mode</string>
     <string name="menu_instructions">Instructions</string>
-    <string name="description">It is a QRcode Reader which can interprets messages hierarchically by the angle of rotation between a camera and a QRcode.</string>
-    <string name="manual">Click Button "Tilting Scan" to activate the Tilting QRcode Reader.Rotate the if the origianl </string>
-    <string name="about">Author:Huang Haomi\nEmail:hhm8756@gmail.com\nIf you have any questions or find any bugs, feel free to email me.</string>
+    <string name="description">This QR code reader can interpret messages hierarchically according to the current rotation angle between the QR code and the smartphone\'s camera. </string>
+    <string name="manual">In Normal Mode, Tilting QReader will return the decoded results directly, and all the messages will be interpreted to user at a time without any hierarchy. This mode is commonly used in many other QR code readers.
+                         \n\nIn Hierarchy Mode, Tilting QReader will interpret and display messages hierarchically according to the current rotation angle.
+                            \n\nThe rotation angle is defined as the included angle between the mid-perpendicular of a upright QR code and the mid-perpendicular of a smartphone\'s screen. Take account of users habits and universal usability, we also define the rotation angle is symmetry and the degrees rotated anticlockwise is the same as the degree rotated clockwise. Therefore, the value of the rotation angle is in the range of [0, 180].
+                            \n\nTo cooperate with Hierarchy Mode, The messages used to generating QR code should be organized in the following format (vertical bar \"|\" is used to hierarchize the messages):\n\"Most important messages | Secondly important messages | &#8230; | Least important messages | Customized upper-boundary of rotation angle\"</string>
+    <string name="about">Author:Huang Haomi\nEmail:hhm8756@gmail.com\n\nIf you have any question or find any bug, please feel free to contact me. Thank you very much.</string>
     <!--<string name="toolbar_activity">Activity with Toolbar</string>-->
 
 </resources>

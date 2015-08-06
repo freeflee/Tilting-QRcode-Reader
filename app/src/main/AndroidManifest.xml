@@ -24,10 +24,10 @@
 
         </activity>
 
-        <activity android:name=".ContinuousCaptureActivity"></activity>
+        <activity android:name=".HierarchyCaptureActivity"></activity>
         <activity android:name=".InstructionsActivity"></activity>
 
-        <activity android:name=".AnyOrientationCaptureActivity"
+        <activity android:name=".NormalCaptureActivity"
                   android:screenOrientation="fullSensor"
                   android:stateNotNeeded="true"
                   android:theme="@style/zxing_CaptureTheme"

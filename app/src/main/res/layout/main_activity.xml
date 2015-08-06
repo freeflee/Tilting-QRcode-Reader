@@ -21,7 +21,8 @@
             android:layout_height="wrap_content"
             android:src="@drawable/welcome_to_tilting_qreader_v2"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"/>
+            android:layout_above="@+id/Continuous_QReader"
+            android:layout_marginBottom="50dp"/>
 
 
         <Button
@@ -29,25 +30,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/red_button"
-            android:text="@string/normal_QReader"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/orange_button"
+            android:text="@string/normal_mode"
             android:textColor="@color/white"
 
             style="@style/buttonStyle"
-            android:onClick="scanBarcodeCustomLayout"/>
+            android:onClick="normalMode"/>
             <!--android:background="@color/blue"-->
 
+        <!--<Button-->
+            <!--android:id="@+id/ZeroAndNinetyDegree_QReader"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@id/normal_QReader"-->
+            <!--android:background="@drawable/blue_button"-->
+            <!--android:text="@string/ZeroandNinety_mode"-->
+            <!--android:textColor="@color/white"-->
+
+            <!--style="@style/buttonStyle"-->
+            <!--android:onClick="ZeroAndNinetyMode"/>-->
+        <!--android:background="@color/blue"-->
         <Button
-            android:id="@+id/tilting_QReader"
+            android:id="@+id/Continuous_QReader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@id/normal_QReader"
-            android:background="@drawable/blue_button"
-            android:text="@string/tilting_QReader"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/red_button"
+            android:text="@string/hierarchy_mode"
             android:textColor="@color/white"
             style="@style/buttonStyle"
             android:onClick="scanContinuous"/>
-
 
     </RelativeLayout>
 
